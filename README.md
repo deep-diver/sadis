@@ -13,14 +13,16 @@ infrastructure.
 The below diagram is a high level block diagram for the Access Information
 Service that runs as an ONOS application and will be used within the CORD/vOLTHA
 context by other ONOS applications such as the DHCP Relay, iGMP, and AAA. The
-basic concept is that the service can run in two modes: local mode - in local
-mode the per subscriber / access device information can be established via
-ONOS's network configuration capability. In this mode all queries are answered
-based on the information from the network configuration remote mode - in the
-remove mode the service is configured with a URL and this URL is used to query
-an external source for subscriber / access device information using a URI
-structure that is defined as part of this service. Information retrieved from
-the external source is cached locally.
+basic concept is that the service can run in two modes: 
+- local mode
+  - in local mode, the per subscriber / access device information can be established 
+    via ONOS's network configuration capability. In this mode all queries are answered
+    based on the information from the network configuration.
+- remote mode 
+  - in the remote mode, the service is configured with a URL and this URL is used to query
+    an external source for subscriber / access device information using a URI
+    structure that is defined as part of this service. Information retrieved from
+    the external source is cached locally.
 
 ![test](overview.png)
 
